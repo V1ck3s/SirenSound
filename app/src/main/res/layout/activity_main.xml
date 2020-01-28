@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Rester appuyé "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Stop"
+        app:layout_constraintEnd_toEndOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Alarmes françaises"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStop" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="#F3F1F1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonAmbulance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ambulance" />
+
+            <Button
+                android:id="@+id/buttonGendarmerieIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gendarmerie Int" />
+
+            <Button
+                android:id="@+id/buttonGendarmerieOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GendarmerieOut" />
+
+            <Button
+                android:id="@+id/buttonPolice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Police" />
+
+            <Button
+                android:id="@+id/buttonPompier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pompier" />
+
+            <Button
+                android:id="@+id/buttonSamu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Samu" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
